@@ -38,8 +38,16 @@ with open(election_data_csv, newline = "") as election_data:
         Percent_New = "%.3f%%" % Percent #convert percent to 3 decimal places... found that on the interwebs
         Percent_Votes.append(Percent_New)
 
+    Winning_Candidate = max(Candidate_Votes)
+    index = Candidate_Votes.index(Winning_Candidate)
+    Winner = Candidates[index]
+
 for i in range(len(Candidates)):
     print(f"{Candidates[i]}: {str(Percent_Votes[i])}% ({str(Candidate_Votes[i])})")
+print("-----------------------")
+
+print(f"Winner: {Winner}")
+
 print("-----------------------")
     
 
