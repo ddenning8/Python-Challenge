@@ -43,7 +43,7 @@ with open(election_data_csv, newline = "") as election_data:
     Winner = Candidates[index]
 
 for i in range(len(Candidates)):
-    print(f"{Candidates[i]}: {str(Percent_Votes[i])}% ({str(Candidate_Votes[i])})")
+    print(f"{Candidates[i]}: {str(Percent_Votes[i])} ({str(Candidate_Votes[i])})")
 print("-----------------------")
 
 print(f"Winner: {Winner}")
