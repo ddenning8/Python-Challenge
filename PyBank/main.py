@@ -48,6 +48,7 @@ print(f"Greatest Increase in Profits: {Total_Months[Max_Month]} (${(str(Max_Tota
 print(f"Greatest Decrease in Profits: {Total_Months[Min_Month]} (${(str(Min_Total_Value))})")
 
 
+#Make a text file with all of your print statements
 with open("output.txt", "w") as output:
     print("Financial Analysis", file=output)
     print("---------------------------------", file=output)
