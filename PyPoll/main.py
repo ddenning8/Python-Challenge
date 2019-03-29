@@ -53,6 +53,7 @@ print(f"Winner: {Winner}")
 print("-----------------------")
 
 
+#Make an output text file with all the print statements
 with open("output.txt", "w") as output:
     print("Election Results", file=output)
     print("-----------------------", file=output)
