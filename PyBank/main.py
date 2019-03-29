@@ -48,4 +48,11 @@ print(f"Greatest Increase in Profits: {Total_Months[Max_Month]} (${(str(Max_Tota
 print(f"Greatest Decrease in Profits: {Total_Months[Min_Month]} (${(str(Min_Total_Value))})")
 
 
-
+with open("output.txt", "w") as output:
+    print("Financial Analysis", file=output)
+    print("---------------------------------", file=output)
+    print(f"Total Months: {len(Total_Months)}", file=output)
+    print(f"Total: ${sum(Total)}", file=output)
+    print(f"Average Change: ${round(sum(Monthly_Change)/len(Monthly_Change) , 2)}", file=output)
+    print(f"Greatest Increase in Profits: {Total_Months[Max_Month]} (${(str(Max_Total_Value))})", file=output)
+    print(f"Greatest Decrease in Profits: {Total_Months[Min_Month]} (${(str(Min_Total_Value))})", file=output)
